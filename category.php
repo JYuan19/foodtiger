@@ -97,7 +97,7 @@ else{
             $search="";
             if(isset($_POST['search'])){
                 $search=" where name like '%".$keyword."%'or description like '%".$keyword."%'";
-                }
+            }
             if(isset($_GET['category'])){
               $cart_id=$_GET['category'];
               $search=" where cart_id='".$cart_id."'";

@@ -74,7 +74,7 @@ $gtotal = 0;
             <label for="Address">Address</label>
             <input type="text" id="Address" name="Address" value="<?php echo $_SESSION['Address']; ?>">
             <label for="CreditNum">Credit card number</label>
-            <input type="text" id="Card" name="Card" placeholder="0000-0000-0000-0000">
+            <input type="text" id="Card" name="Card" placeholder="0000-0000-0000-0000" required>
             
 
             <div class="row">
@@ -113,7 +113,7 @@ $gtotal = 0;
               </div>
               <div class="col-25">
                 <label for="cvv">CVV</label>
-                <input type="password" id="CCV" name="CCV" maxlength="3" placeholder="---">
+                <input type="password" id="CCV" name="CCV" maxlength="3" placeholder="---" required>
               </div>
             </div>
           </div>

@@ -99,7 +99,7 @@ if(isset($_GET['f_id'])){
                             <dl class="param param-inline">
                             <dt>Quantity: </dt>
                             <dd>
-                            <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;">
+                            <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 80px;">
                             </dd>
                             </dl>  <!-- item-property .// -->
                         </div> <!-- col.// -->
@@ -113,8 +113,7 @@ if(isset($_GET['f_id'])){
                         <input type="submit" name="add" class="btn btn-lg btn-warning text-uppercase text-white" value="Add to Cart" >
                     <?php
                     } else {?>
-                        <a href="#" class="btn btn-lg btn-warning text-uppercase text-white disabled" name="add" value="Add to Cart">Add to Cart</a>
-                        <p>Please Login First.</p>
+                        <a href="#" class="btn btn-lg btn-warning text-uppercase text-white" name="add" value="Add to Cart" onclick="document.getElementById('id01').style.display='block'">Add to Cart</a>
                     <?php 
                     } ?>   
                 </article> <!-- card-body.// -->
